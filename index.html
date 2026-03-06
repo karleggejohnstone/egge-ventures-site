@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egge Ventures LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #0c0c0b; --gold: #c8a96e; --gold-dim: #8a6f42; --text: #e8e4dc; --muted: #6b6760; --border: #2a2926; }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monospace; font-weight: 300; min-height: 100vh; display: flex; flex-direction: column; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 2rem 3rem; border-bottom: 1px solid var(--border); }
+    .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); }
+    .domain { font-size: 0.7rem; letter-spacing: 0.15em; color: var(--muted); text-transform: uppercase; }
+    main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 6rem 3rem 4rem; max-width: 900px; margin: 0 auto; width: 100%; }
+    .eyebrow { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 2rem; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; line-height: 1; margin-bottom: 2rem; }
+    h1 span { color: var(--gold); }
+    .tagline { font-size: 0.8rem; line-height: 1.8; color: var(--muted); max-width: 420px; margin-bottom: 4rem; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid var(--border); }
+    .info-cell { padding: 1.5rem 2rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .info-cell:last-child { border-right: none; }
+    .info-label { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 0.6rem; }
+    .info-value { font-size: 0.82rem; color: var(--text); line-height: 1.6; }
+    .rule { width: 4rem; height: 1px; background: var(--gold-dim); margin: 4rem 0; }
+    .contact-label { font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .contact-email { font-size: 0.9rem; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px; }
+    footer { padding: 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-text { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--muted); text-transform: uppercase; }
+    .state-badge { font-size: 0.6rem; letter-spacing: 0.2em; color: var(--gold-dim); border: 1px solid var(--border); padding: 0.35rem 0.8rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Egge Ventures</div>
+    <div class="domain">eggellc.com</div>
+  </header>
+  <main>
+    <p class="eyebrow">California Limited Liability Company</p>
+    <h1>Egge<br><span>Ventures</span><br>LLC</h1>
+    <p class="tagline">A California limited liability company engaged in any lawful act or activity, organized and operating from Sacramento, California.</p>
+    <div class="info-grid">
+      <div class="info-cell"><div class="info-label">Entity Type</div><div class="info-value">Multi-Member LLC<br>California</div></div>
+      <div class="info-cell"><div class="info-label">Principal Office</div><div class="info-value">2108 N St, Ste N<br>Sacramento, CA 95816</div></div>
+      <div class="info-cell"><div class="info-label">Filing Number</div><div class="info-value">B20260102463</div></div>
+      <div class="info-cell"><div class="info-label">Formed</div><div class="info-value">February 28, 2026</div></div>
+    </div>
+    <div class="rule"></div>
+    <div class="contact-section">
+      <div class="contact-label">Contact</div>
+      <a class="contact-email" href="mailto:karl@eggellc.com">karl@eggellc.com</a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-text">2026 Egge Ventures LLC - All rights reserved</div>
+    <div class="state-badge">Sacramento, CA</div>
+  </footer>
+</body>
+</html>
