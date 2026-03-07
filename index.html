@@ -18,7 +18,7 @@
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; line-height: 1; letter-spacing: -0.02em; margin-bottom: 2rem; }
     h1 span { color: var(--gold); }
     .tagline { font-size: 0.8rem; line-height: 1.8; color: var(--muted); max-width: 420px; margin-bottom: 4rem; }
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid var(--border); margin-bottom: 0; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid var(--border); }
     .info-cell { padding: 1.5rem 2rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .info-cell:last-child { border-right: none; }
     .info-label { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 0.6rem; }
@@ -26,13 +26,14 @@
     .rule { width: 4rem; height: 1px; background: var(--gold-dim); margin: 4rem 0; }
     .section-label { font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; }
     .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
-    .portfolio-card { background: var(--bg); padding: 1.5rem 2rem; text-decoration: none; display: block; transition: background 0.2s; }
+    .portfolio-card { background: var(--bg); padding: 1.8rem 2rem; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 110px; transition: background 0.2s; }
     .portfolio-card:hover { background: #111110; }
-    .portfolio-card-label { font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 0.5rem; }
+    .portfolio-card-label { font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 0.8rem; }
     .portfolio-card-name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 0.4rem; }
-    .portfolio-card-url { font-size: 0.65rem; color: var(--gold); letter-spacing: 0.1em; }
-    .contact-email { font-size: 0.9rem; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px; }
-    .contact-email:hover { color: #e8c98a; border-color: #e8c98a; }
+    .portfolio-card-logo { max-height: 32px; width: auto; object-fit: contain; margin-bottom: 0.6rem; }
+    .portfolio-card-url { font-size: 0.65rem; color: var(--gold); letter-spacing: 0.1em; margin-top: auto; }
+    .contact-email { font-size: 0.9rem; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px; transition: color 0.2s; }
+    .contact-email:hover { color: #e8c98a; }
     footer { padding: 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
     .footer-text { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--muted); text-transform: uppercase; }
     .state-badge { font-size: 0.6rem; letter-spacing: 0.2em; color: var(--gold-dim); border: 1px solid var(--border); padding: 0.35rem 0.8rem; text-transform: uppercase; }
@@ -47,7 +48,7 @@
   <main>
     <p class="eyebrow">California Limited Liability Company</p>
     <h1>Egge<br><span>Ventures</span><br>LLC</h1>
-    <p class="tagline">A California limited liability company engaged in any lawful act or activity, organized and operating from Sacramento, California.</p>
+    <p class="tagline">A California limited liability company organized and operating from Sacramento, California.</p>
     <div class="info-grid">
       <div class="info-cell"><div class="info-label">Entity Type</div><div class="info-value">Multi-Member LLC<br>California</div></div>
       <div class="info-cell"><div class="info-label">Principal Office</div><div class="info-value">2108 N St, Ste N<br>Sacramento, CA 95816</div></div>
@@ -65,7 +66,7 @@
         </a>
         <a class="portfolio-card" href="https://myubill.com" target="_blank" rel="noopener">
           <div class="portfolio-card-label">Utility Billing</div>
-          <div class="portfolio-card-name">MyUbill</div>
+          <img class="portfolio-card-logo" src="data:image/png;base64,undefined" alt="MyUbill" />
           <div class="portfolio-card-url">myubill.com</div>
         </a>
       </div>
@@ -77,7 +78,7 @@
     </div>
   </main>
   <footer>
-    <div class="footer-text">2026 Egge Ventures LLC - All rights reserved</div>
+    <div class="footer-text">2026 Egge Ventures LLC &mdash; All rights reserved</div>
     <div class="state-badge">Sacramento, CA</div>
   </footer>
 </body>
